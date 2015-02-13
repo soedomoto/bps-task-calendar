@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping("/index")
+@RequestMapping("/")
 public class CIndex {
 	@Autowired private ServletContext context;
 	
