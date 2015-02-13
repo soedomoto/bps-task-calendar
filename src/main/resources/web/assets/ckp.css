@@ -1,0 +1,55 @@
+.label {
+	float: right;
+	padding: 1px 40px;
+	font-size: 13pt;
+	font-weight: bold;
+	border: 3px solid black;
+}
+.content {
+	padding-top: 30px;
+	page-break-after: always;
+}
+.content .properties {
+	margin-bottom: 15px;
+}
+.content .properties table tr td {
+	line-height: 20px;
+}
+.content .task table {
+	font-size: 100%;
+	width: 100%;
+	border: 1px solid black;
+}
+.content .task th {
+	/* background-color: rgb(128,128,128); */
+}
+.content .task th, .content .task td {
+	border-top: thin solid black;
+	border-left: thin solid black;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 20px;
+}
+.content .task tr:FIRST-CHILD th {
+	border-top: 0px;
+}
+.content .task tr th:FIRST-CHILD, .content .task tr td:FIRST-CHILD {
+	border-left: 0px;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url(fonts/SEGOEUI.TTF);
+    -fs-pdf-font-embed: embed;
+    -fs-pdf-font-encoding: Identity-H;
+}
+
+body {
+	font-family: 'Segoe UI';
+	font-size: 80%;
+}
+
+@PAGE {
+	size: A4 landscape;
+	margin: 1.7cm, 1.8cm, 1.9cm, 1.8cm;
+}

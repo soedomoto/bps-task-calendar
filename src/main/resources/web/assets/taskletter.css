@@ -1,0 +1,115 @@
+.header {
+    display: block; text-align: left; 
+    position: running(header);
+}
+.header .logo {
+	position: absolute;
+	top: 70px;
+	left: 0px;
+	height: 75px;
+}
+.header .title {
+	position: absolute;
+	top: 80px;
+	left: 100px;
+	font-family: sans-serif;
+	/* font-weight: bold;
+	font-style: italic; */
+	font-size: 120%;
+}
+.footer {
+    display: block; 
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 9pt;
+    bottom: 5px;
+    position: running(footer);
+}
+.content {
+	page-break-after: always;
+}
+.rel {
+	position: relative;
+}
+.sp {
+	line-height: 33px;
+}
+.fs {
+	font-size: 11pt;
+}
+
+
+.visum {
+	border: 1px solid black;
+	-fs-table-paginate: paginate;
+}
+.visum tr td {
+	border-top: thin solid black;
+	border-left: thin solid black;
+	text-align: center;
+	vertical-align: middle;
+	padding: 5px;
+}
+.visum tr:FIRST-CHILD td {
+	border-top: 0px;
+}
+.visum tr td:FIRST-CHILD {
+	border-left: 0px;
+}
+
+
+@PAGE {
+	size: A4;
+	margin: 4.44cm, 2.54cm, 0.95cm, 2.27cm;
+}
+@PAGE {
+    @top-left { content: element(header) }
+}
+@PAGE { 
+    @bottom-center { content: element(footer) }
+}
+
+
+
+
+tr {
+	page-break-inside:avoid;
+}
+
+
+/* body {
+	background-color: #C8C8C8;
+	margin: 3px 0 6px;
+}
+.paper {
+	width: 210mm;
+	height: 297mm;
+	-webkit-box-shadow: 5px 4px 5px rgba(0,0,0,.2);
+	margin: 0 auto;
+	background-color: white;
+}
+.margin {
+	padding-top: 70px;
+	padding-left: 90px;
+	padding-right: 80px;
+	padding-bottom: 70px;
+}
+.header {
+	position: relative;
+	margin-bottom: 22px;
+}
+.header .logo {
+	height: 75px;
+}
+.header .title {
+	position: absolute;
+	left: 100px;
+	font-family: arial;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 120%;
+	top: 10px;
+}
+.body {
+	
+} */
