@@ -13,3 +13,4 @@ hs_err_pid*
 /target/
 /jsp/
 /taskDB.mv.db
+/bin/
